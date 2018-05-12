@@ -12,6 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="CurrencyConverter" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="OgS-tZ-C4o" id="n9V-0G-nxr"/>
+                <outlet property="searchButton" destination="Zi7-Ao-n67" id="YQI-3f-0o3"/>
+                <outlet property="searchTextField" destination="iMe-06-2xs" id="G0F-Pa-jB9"/>
+                <outlet property="tableView" destination="jRu-Wd-ITe" id="IUf-GC-jxi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +23,53 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jRu-Wd-ITe">
+                    <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgS-tZ-C4o">
+                    <rect key="frame" x="0.0" y="20" width="375" height="80"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMe-06-2xs">
+                            <rect key="frame" x="80" y="25" width="275" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="send"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zi7-Ao-n67">
+                            <rect key="frame" x="20" y="20" width="50" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="70f-AU-Zru"/>
+                                <constraint firstAttribute="width" constant="50" id="Tta-Tb-Mbt"/>
+                            </constraints>
+                            <state key="normal" title="Country">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Zi7-Ao-n67" firstAttribute="centerY" secondItem="OgS-tZ-C4o" secondAttribute="centerY" id="6xP-G7-tYn"/>
+                        <constraint firstItem="Zi7-Ao-n67" firstAttribute="leading" secondItem="OgS-tZ-C4o" secondAttribute="leading" constant="20" id="baC-Pc-kpi"/>
+                        <constraint firstItem="iMe-06-2xs" firstAttribute="centerY" secondItem="Zi7-Ao-n67" secondAttribute="centerY" id="iOo-bi-hIi"/>
+                        <constraint firstItem="iMe-06-2xs" firstAttribute="leading" secondItem="Zi7-Ao-n67" secondAttribute="trailing" constant="10" id="lmp-x4-TBS"/>
+                        <constraint firstAttribute="height" constant="80" id="oCX-SG-eL0"/>
+                        <constraint firstAttribute="trailing" secondItem="iMe-06-2xs" secondAttribute="trailing" constant="20" id="rH0-3R-VPB"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jRu-Wd-ITe" secondAttribute="trailing" id="0sY-WR-Swh"/>
+                <constraint firstItem="jRu-Wd-ITe" firstAttribute="top" secondItem="OgS-tZ-C4o" secondAttribute="bottom" id="2fr-TN-qTE"/>
+                <constraint firstItem="jRu-Wd-ITe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DK9-kU-IJ4"/>
+                <constraint firstItem="OgS-tZ-C4o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eol-Cw-Sri"/>
+                <constraint firstItem="OgS-tZ-C4o" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Gbw-vc-g1e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jRu-Wd-ITe" secondAttribute="bottom" id="k4b-Ht-OBp"/>
+                <constraint firstItem="OgS-tZ-C4o" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xfW-hN-BE0"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>

@@ -10,8 +10,10 @@ import Foundation
 
 enum LocalizedString: String {
     case parsingError
+    case home
+    case others
     
     func localize() -> String {
-        return NSLocalizedString(rawValue, comment: "")
+        return NSLocalizedString(self.rawValue, comment: "")
     }
 }

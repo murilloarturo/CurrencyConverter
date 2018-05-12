@@ -19,6 +19,12 @@ class CurrencyRateData: Mappable {
     var base: CurrencyCode
     var date: Date?
     var rates: [CurrencyRate] = []
+    var primaryRates: [CurrencyRate] {
+        return rates.filter{ $0.isPrimary }
+    }
+    var otherRates: [CurrencyRate] {
+        return rates.filter{ !$0.isPrimary }
+    }
     
     required init?(map: Map) {
         guard let baseString = map.JSON[CodingKey.base.rawValue] as? String,
@@ -41,6 +47,9 @@ class CurrencyRateData: Mappable {
 class CurrencyRate {
     var currency: CurrencyCode
     var rate: Double = 0.0
+    var isPrimary: Bool {
+        return currency == .unitedKingdom || currency == .europe || currency == .japan || currency == .brazil
+    }
     
     init(currency: CurrencyCode, rate: Double) {
         self.currency = currency

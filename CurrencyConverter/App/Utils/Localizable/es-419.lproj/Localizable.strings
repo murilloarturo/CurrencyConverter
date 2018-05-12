@@ -1,0 +1,11 @@
+/* 
+  LocalizableStrings.strings
+  CurrencyConverter
+
+  Created by Arturo on 5/12/18.
+  Copyright © 2018 AM. All rights reserved.
+*/
+
+"parsingError" = "Ocurrió un error procesando tu solicitud. Porfavor intenta de nuevo.";
+"home" = "Convertidor de moneda";
+"others" = "Otras";
