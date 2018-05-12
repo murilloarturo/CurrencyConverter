@@ -7,7 +7,10 @@
 //
 
 import Foundation
+import RxSwift
 
 class HomeInteractor {
-    
+    func currencyRates(for currencyCode: CurrencyCode) -> Single<CurrencyRateData> {
+        return CurrencyRateAPI.fetchRates(for: currencyCode)
+    }
 }

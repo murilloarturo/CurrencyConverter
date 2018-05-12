@@ -16,7 +16,7 @@ class HomeRouter {
     }
     
     func showHome(with presenter: HomePresenter) {
-        let viewController = HomeViewController()
+        let viewController = HomeViewController(presenter: presenter)
         navigation.viewControllers = [viewController]
     }
     

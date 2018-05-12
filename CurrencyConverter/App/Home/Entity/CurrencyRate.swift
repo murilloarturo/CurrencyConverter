@@ -40,9 +40,9 @@ class CurrencyRateData: Mappable {
 
 class CurrencyRate {
     var currency: CurrencyCode
-    var rate: Float = 0.0
+    var rate: Double = 0.0
     
-    init(currency: CurrencyCode, rate: Float) {
+    init(currency: CurrencyCode, rate: Double) {
         self.currency = currency
         self.rate = rate
     }
@@ -96,7 +96,7 @@ struct CurrencyRatesTransformType: TransformType {
         var data: [CurrencyRate] = []
         json.forEach { (item) in
             guard let currencyCode = CurrencyCode(rawValue: item.key),
-                let rate = item.value as? Float else {
+                let rate = item.value as? Double else {
                     return
             }
             

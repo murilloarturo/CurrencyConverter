@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		69194F6D20A747370015FE2E /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69194F6C20A747370015FE2E /* CurrencyRate.swift */; };
-		69194F7020A7506C0015FE2E /* CurrencyExchangeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69194F6F20A7506C0015FE2E /* CurrencyExchangeAPI.swift */; };
+		69194F7020A7506C0015FE2E /* CurrencyRateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69194F6F20A7506C0015FE2E /* CurrencyRateAPI.swift */; };
 		694AFC1020A73EB40083E6B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */; };
 		694AFC1720A73EB50083E6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1620A73EB50083E6B6 /* Assets.xcassets */; };
 		694AFC1A20A73EB50083E6B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1820A73EB50083E6B6 /* LaunchScreen.storyboard */; };
 		694AFC2520A73EB50083E6B6 /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AFC2420A73EB50083E6B6 /* CurrencyConverterTests.swift */; };
+		69E7B26920A757B00013729A /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7B26820A757B00013729A /* LocalizedString.swift */; };
+		69E7B26C20A757C50013729A /* LocalizableStrings.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69E7B26E20A757C50013729A /* LocalizableStrings.strings */; };
 		69EB78F020A74314005207D0 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78EF20A74314005207D0 /* HomeModule.swift */; };
 		69EB78F320A7433C005207D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78F120A7433C005207D0 /* HomeViewController.swift */; };
 		69EB78F420A7433C005207D0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69EB78F220A7433C005207D0 /* HomeViewController.xib */; };
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		4D426660A19DD34ED73AB270 /* Pods-CurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConverter/Pods-CurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
 		69194F6C20A747370015FE2E /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
-		69194F6F20A7506C0015FE2E /* CurrencyExchangeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeAPI.swift; sourceTree = "<group>"; };
+		69194F6F20A7506C0015FE2E /* CurrencyRateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateAPI.swift; sourceTree = "<group>"; };
 		694AFC0C20A73EB30083E6B6 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		694AFC1620A73EB50083E6B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +47,10 @@
 		694AFC2020A73EB50083E6B6 /* CurrencyConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		694AFC2420A73EB50083E6B6 /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
 		694AFC2620A73EB50083E6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69E7B26820A757B00013729A /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
+		69E7B26D20A757C50013729A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LocalizableStrings.strings; sourceTree = "<group>"; };
+		69E7B26F20A757E00013729A /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		69E7B27020A757E00013729A /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LocalizableStrings.strings"; sourceTree = "<group>"; };
 		69EB78EF20A74314005207D0 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
 		69EB78F120A7433C005207D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		69EB78F220A7433C005207D0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
@@ -94,7 +100,7 @@
 		69194F6E20A750560015FE2E /* API */ = {
 			isa = PBXGroup;
 			children = (
-				69194F6F20A7506C0015FE2E /* CurrencyExchangeAPI.swift */,
+				69194F6F20A7506C0015FE2E /* CurrencyRateAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -138,9 +144,27 @@
 			path = CurrencyConverterTests;
 			sourceTree = "<group>";
 		};
+		69E7B26720A757990013729A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				69E7B27120A758670013729A /* Localizable */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		69E7B27120A758670013729A /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				69E7B26820A757B00013729A /* LocalizedString.swift */,
+				69E7B26E20A757C50013729A /* LocalizableStrings.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
 		69EB78E620A740A5005207D0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				69E7B26720A757990013729A /* Utils */,
 				69194F6E20A750560015FE2E /* API */,
 				69EB78E820A740EA005207D0 /* Home */,
 			);
@@ -278,6 +302,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = 694AFC0320A73EB30083E6B6;
 			productRefGroup = 694AFC0D20A73EB30083E6B6 /* Products */;
@@ -298,6 +323,7 @@
 				69EB78FE20A745DE005207D0 /* Info.plist in Resources */,
 				694AFC1A20A73EB50083E6B6 /* LaunchScreen.storyboard in Resources */,
 				694AFC1720A73EB50083E6B6 /* Assets.xcassets in Resources */,
+				69E7B26C20A757C50013729A /* LocalizableStrings.strings in Resources */,
 				69EB78F420A7433C005207D0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,11 +362,15 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-CurrencyConverter/Pods-CurrencyConverter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -376,10 +406,11 @@
 				69EB78F020A74314005207D0 /* HomeModule.swift in Sources */,
 				694AFC1020A73EB40083E6B6 /* AppDelegate.swift in Sources */,
 				69EB78F320A7433C005207D0 /* HomeViewController.swift in Sources */,
-				69194F7020A7506C0015FE2E /* CurrencyExchangeAPI.swift in Sources */,
+				69194F7020A7506C0015FE2E /* CurrencyRateAPI.swift in Sources */,
 				69EB78FD20A74422005207D0 /* HomeInteractor.swift in Sources */,
 				69EB78F620A74352005207D0 /* HomePresenter.swift in Sources */,
 				69EB78FB20A7440F005207D0 /* HomeRouter.swift in Sources */,
+				69E7B26920A757B00013729A /* LocalizedString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +437,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				694AFC1920A73EB50083E6B6 /* Base */,
+				69E7B26F20A757E00013729A /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		69E7B26E20A757C50013729A /* LocalizableStrings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69E7B26D20A757C50013729A /* en */,
+				69E7B27020A757E00013729A /* es-419 */,
+			);
+			name = LocalizableStrings.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -417,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -464,7 +506,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -477,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -518,7 +561,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;

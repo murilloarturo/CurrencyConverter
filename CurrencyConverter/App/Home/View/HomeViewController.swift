@@ -8,9 +8,16 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+protocol HomeViewControllerPresenter: class {
+    func viewDidLoad()
+}
 
-    init() {
+class HomeViewController: UIViewController {
+    private let presenter: HomeViewControllerPresenter
+    
+    init(presenter: HomeViewControllerPresenter) {
+        self.presenter = presenter
+        
         super.init(nibName: String(describing: HomeViewController.self), bundle: nil)
     }
     
@@ -21,7 +28,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        presenter.viewDidLoad()
     }
     
     
