@@ -48,7 +48,7 @@ class CurrencyRate {
     var currency: CurrencyCode
     var rate: Double = 0.0
     var isPrimary: Bool {
-        return currency == .unitedKingdom || currency == .europe || currency == .japan || currency == .brazil
+        return currency == .unitedKingdom || currency == .europe || currency == .japan || currency == .brazil || currency == .usa
     }
     
     init(currency: CurrencyCode, rate: Double) {

@@ -8,6 +8,15 @@
 
 import UIKit
 
+extension UIView {
+    func setupShadow(radius: CGFloat, opacity: CGFloat, offset: CGFloat) {
+        layer.shadowOffset = CGSize(width: 0, height: offset)
+        layer.shadowRadius = radius
+        layer.shadowOpacity = Float(opacity)
+        layer.masksToBounds = false
+    }
+}
+
 public extension UITableView {
     public func registerNibForCell<T: UITableViewCell>(with cellType: T.Type) {
         register(UINib(nibName: String(describing: cellType), bundle: nil), forCellReuseIdentifier: String(describing: cellType))

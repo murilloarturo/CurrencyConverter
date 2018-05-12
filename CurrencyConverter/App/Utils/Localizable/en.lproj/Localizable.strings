@@ -9,3 +9,6 @@
 "parsingError" = "There was an error processing your request. Please try again.";
 "home" = "Currency converter";
 "others" = "Others";
+"cancel" = "Cancel";
+"done" = "Done";
+"selectCurrency" = "Select Currency";

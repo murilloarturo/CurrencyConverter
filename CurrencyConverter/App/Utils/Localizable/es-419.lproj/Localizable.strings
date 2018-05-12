@@ -9,3 +9,6 @@
 "parsingError" = "Ocurrió un error procesando tu solicitud. Porfavor intenta de nuevo.";
 "home" = "Convertidor de moneda";
 "others" = "Otras";
+"cancel" = "Cancelar";
+"done" = "Listo";
+"selectCurrency" = "Seleccionar moneda";

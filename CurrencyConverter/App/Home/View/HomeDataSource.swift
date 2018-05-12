@@ -11,8 +11,10 @@ import RxSwift
 
 class HomeDataSource: NSObject {
     private let disposeBag = DisposeBag()
+    let currentCurrency = Variable<CurrencyCode>(.usa)
     var data: CurrencyRateData? {
         didSet {
+            pickerView?.reloadComponent(0)
             tableView?.reloadData()
         }
     }
@@ -23,9 +25,36 @@ class HomeDataSource: NSObject {
             tableView?.delegate = self
         }
     }
+    weak var pickerView: UIPickerView! {
+        didSet {
+            pickerView.dataSource = self
+            pickerView.delegate = self
+        }
+    }
+    
+    func currencies() -> [CurrencyCode] {
+        guard let data = data else {
+            return []
+        }
+        return data.rates.map{ $0.currency }
+    }
+    
+    func updateCurrency(with row: Int) {
+        let items = currencies()
+        guard row >= 0 && row < items.count else {
+            return
+        }
+        currentCurrency.value = items[row]
+    }
+    
+    func currentRow() -> Int {
+        let items = currencies()
+        let index = items.index(of: currentCurrency.value)
+        return index ?? 0
+    }
 }
 
-extension HomeDataSource: UITableViewDataSource {
+extension HomeDataSource: UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         guard let data = data, !data.rates.isEmpty else {
             return 0
@@ -91,4 +120,20 @@ extension HomeDataSource: UITableViewDataSource {
     }
 }
 
-extension HomeDataSource: UITableViewDelegate { }
+extension HomeDataSource: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 25
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return currencies().count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return currencies()[row].rawValue
+    }
+}

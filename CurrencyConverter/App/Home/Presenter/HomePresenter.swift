@@ -13,7 +13,7 @@ class HomePresenter {
     private let interactor: HomeInteractor
     private let router: HomeRouter
     private let disposeBag = DisposeBag()
-    private let dataSource = HomeDataSource()
+    private weak var dataSource: HomeDataSource?
     
     init(interactor: HomeInteractor, router: HomeRouter) {
         self.interactor = interactor
@@ -24,11 +24,20 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomeViewControllerPresenter {
-    func viewDidLoad(tableView: UITableView) {
-        dataSource.tableView = tableView
-        interactor.currencyRates(for: .usa)
+    func viewDidLoad(dataSource: HomeDataSource) {
+        self.dataSource = dataSource
+        dataSource.currentCurrency
+            .asObservable()
+            .subscribe(onNext: { [weak self] (currency) in
+                self?.updateCurrencyRates(with: currency)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    private func updateCurrencyRates(with currencyCode: CurrencyCode) {
+        interactor.currencyRates(for: currencyCode)
             .subscribe(onSuccess: { [weak self] (data) in
-                self?.dataSource.data = data
+                self?.dataSource?.data = data
             }) { [weak self] (error) in
                 
             }
