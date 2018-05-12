@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		694AFC1020A73EB40083E6B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */; };
-		694AFC1220A73EB40083E6B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AFC1120A73EB40083E6B6 /* ViewController.swift */; };
-		694AFC1520A73EB40083E6B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1320A73EB40083E6B6 /* Main.storyboard */; };
 		694AFC1720A73EB50083E6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1620A73EB50083E6B6 /* Assets.xcassets */; };
 		694AFC1A20A73EB50083E6B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1820A73EB50083E6B6 /* LaunchScreen.storyboard */; };
 		694AFC2520A73EB50083E6B6 /* CurrencyConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AFC2420A73EB50083E6B6 /* CurrencyConverterTests.swift */; };
+		69EB78F020A74314005207D0 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78EF20A74314005207D0 /* HomeModule.swift */; };
+		69EB78F320A7433C005207D0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78F120A7433C005207D0 /* HomeViewController.swift */; };
+		69EB78F420A7433C005207D0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69EB78F220A7433C005207D0 /* HomeViewController.xib */; };
+		69EB78F620A74352005207D0 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78F520A74352005207D0 /* HomePresenter.swift */; };
+		69EB78FB20A7440F005207D0 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78FA20A7440F005207D0 /* HomeRouter.swift */; };
+		69EB78FD20A74422005207D0 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78FC20A74422005207D0 /* HomeInteractor.swift */; };
+		69EB78FE20A745DE005207D0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1B20A73EB50083E6B6 /* Info.plist */; };
 		B49F73682F70D4943F4EFB08 /* Pods_CurrencyConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD108C42FDFE22E06A29674A /* Pods_CurrencyConverter.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,14 +35,18 @@
 		4D426660A19DD34ED73AB270 /* Pods-CurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConverter/Pods-CurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
 		694AFC0C20A73EB30083E6B6 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		694AFC1120A73EB40083E6B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		694AFC1420A73EB40083E6B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		694AFC1620A73EB50083E6B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694AFC1920A73EB50083E6B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694AFC1B20A73EB50083E6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694AFC2020A73EB50083E6B6 /* CurrencyConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		694AFC2420A73EB50083E6B6 /* CurrencyConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTests.swift; sourceTree = "<group>"; };
 		694AFC2620A73EB50083E6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69EB78EF20A74314005207D0 /* HomeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModule.swift; sourceTree = "<group>"; };
+		69EB78F120A7433C005207D0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		69EB78F220A7433C005207D0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		69EB78F520A74352005207D0 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		69EB78FA20A7440F005207D0 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		69EB78FC20A74422005207D0 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		DF1B9B6662885C9F4D69C1A6 /* Pods-CurrencyConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConverter/Pods-CurrencyConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		FD108C42FDFE22E06A29674A /* Pods_CurrencyConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurrencyConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,12 +110,9 @@
 		694AFC0E20A73EB30083E6B6 /* CurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				69EB78E620A740A5005207D0 /* App */,
 				694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */,
-				694AFC1120A73EB40083E6B6 /* ViewController.swift */,
-				694AFC1320A73EB40083E6B6 /* Main.storyboard */,
-				694AFC1620A73EB50083E6B6 /* Assets.xcassets */,
-				694AFC1820A73EB50083E6B6 /* LaunchScreen.storyboard */,
-				694AFC1B20A73EB50083E6B6 /* Info.plist */,
+				69EB78FF20A74614005207D0 /* Supporting Files */,
 			);
 			path = CurrencyConverter;
 			sourceTree = "<group>";
@@ -118,6 +124,77 @@
 				694AFC2620A73EB50083E6B6 /* Info.plist */,
 			);
 			path = CurrencyConverterTests;
+			sourceTree = "<group>";
+		};
+		69EB78E620A740A5005207D0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69EB78E820A740EA005207D0 /* Home */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69EB78E820A740EA005207D0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69EB78EF20A74314005207D0 /* HomeModule.swift */,
+				69EB78EB20A7411A005207D0 /* View */,
+				69EB78E920A740F7005207D0 /* Interactor */,
+				69EB78ED20A74127005207D0 /* Presenter */,
+				69EB78EE20A74138005207D0 /* Entity */,
+				69EB78EC20A74121005207D0 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69EB78E920A740F7005207D0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				69EB78FC20A74422005207D0 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		69EB78EB20A7411A005207D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69EB78F120A7433C005207D0 /* HomeViewController.swift */,
+				69EB78F220A7433C005207D0 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69EB78EC20A74121005207D0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				69EB78FA20A7440F005207D0 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		69EB78ED20A74127005207D0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				69EB78F520A74352005207D0 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		69EB78EE20A74138005207D0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		69EB78FF20A74614005207D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				694AFC1620A73EB50083E6B6 /* Assets.xcassets */,
+				694AFC1820A73EB50083E6B6 /* LaunchScreen.storyboard */,
+				694AFC1B20A73EB50083E6B6 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69EB78FE20A745DE005207D0 /* Info.plist in Resources */,
 				694AFC1A20A73EB50083E6B6 /* LaunchScreen.storyboard in Resources */,
 				694AFC1720A73EB50083E6B6 /* Assets.xcassets in Resources */,
-				694AFC1520A73EB40083E6B6 /* Main.storyboard in Resources */,
+				69EB78F420A7433C005207D0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694AFC1220A73EB40083E6B6 /* ViewController.swift in Sources */,
+				69EB78F020A74314005207D0 /* HomeModule.swift in Sources */,
 				694AFC1020A73EB40083E6B6 /* AppDelegate.swift in Sources */,
+				69EB78F320A7433C005207D0 /* HomeViewController.swift in Sources */,
+				69EB78FD20A74422005207D0 /* HomeInteractor.swift in Sources */,
+				69EB78F620A74352005207D0 /* HomePresenter.swift in Sources */,
+				69EB78FB20A7440F005207D0 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +384,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		694AFC1320A73EB40083E6B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				694AFC1420A73EB40083E6B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		694AFC1820A73EB50083E6B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -443,7 +517,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ3WUP28G9;
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.CurrencyConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -459,7 +537,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ3WUP28G9;
 				INFOPLIST_FILE = CurrencyConverter/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.CurrencyConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -475,7 +557,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ3WUP28G9;
 				INFOPLIST_FILE = CurrencyConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.CurrencyConverterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -492,7 +578,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QZ3WUP28G9;
 				INFOPLIST_FILE = CurrencyConverterTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = AM.CurrencyConverterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
