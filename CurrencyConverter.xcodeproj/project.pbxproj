@@ -17,6 +17,7 @@
 		694BE04720A75F1100C89ED9 /* CurrencyRateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 694BE04520A75F1100C89ED9 /* CurrencyRateTableViewCell.xib */; };
 		694BE04920A7619800C89ED9 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694BE04820A7619800C89ED9 /* HomeDataSource.swift */; };
 		694BE04C20A7677500C89ED9 /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694BE04B20A7677500C89ED9 /* UIKit+Extensions.swift */; };
+		694BE05020A78C5B00C89ED9 /* CurrencyCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694BE04F20A78C5B00C89ED9 /* CurrencyCode.swift */; };
 		69E7B26920A757B00013729A /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E7B26820A757B00013729A /* LocalizedString.swift */; };
 		69E7B26C20A757C50013729A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69E7B26E20A757C50013729A /* Localizable.strings */; };
 		69EB78F020A74314005207D0 /* HomeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EB78EF20A74314005207D0 /* HomeModule.swift */; };
@@ -56,6 +57,7 @@
 		694BE04820A7619800C89ED9 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		694BE04B20A7677500C89ED9 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		694BE04E20A76A8600C89ED9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		694BE04F20A78C5B00C89ED9 /* CurrencyCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCode.swift; sourceTree = "<group>"; };
 		69E7B26820A757B00013729A /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		69E7B26F20A757E00013729A /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		69E7B27020A757E00013729A /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 		69194F6E20A750560015FE2E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				694BE04F20A78C5B00C89ED9 /* CurrencyCode.swift */,
 				69194F6F20A7506C0015FE2E /* CurrencyRateAPI.swift */,
 			);
 			path = API;
@@ -441,6 +444,7 @@
 				69EB78FD20A74422005207D0 /* HomeInteractor.swift in Sources */,
 				694BE04920A7619800C89ED9 /* HomeDataSource.swift in Sources */,
 				69EB78F620A74352005207D0 /* HomePresenter.swift in Sources */,
+				694BE05020A78C5B00C89ED9 /* CurrencyCode.swift in Sources */,
 				69EB78FB20A7440F005207D0 /* HomeRouter.swift in Sources */,
 				69E7B26920A757B00013729A /* LocalizedString.swift in Sources */,
 			);

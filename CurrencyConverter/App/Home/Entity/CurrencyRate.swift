@@ -57,42 +57,6 @@ class CurrencyRate {
     }
 }
 
-enum CurrencyCode: String {
-    case australia = "AUD"
-    case bulgaria = "BGN"
-    case brazil = "BRL"
-    case canada = "CAD"
-    case switzerland = "CHF"
-    case china = "CNY"
-    case czechRepublic = "CZK"
-    case denmark = "DKK"
-    case europe = "EUR"
-    case unitedKingdom = "GBP"
-    case hongKong = "HKD"
-    case croatia = "HRK"
-    case hungary = "HUF"
-    case indonesia = "IDR"
-    case israel = "ILS"
-    case india = "INR"
-    case iceland = "ISK"
-    case japan = "JPY"
-    case southKorea = "KRW"
-    case mexico = "MXN"
-    case malaysia = "MYR"
-    case norway = "NOK"
-    case newZealand = "NZD"
-    case philippine = "PHP"
-    case poland = "PLN"
-    case romania = "RON"
-    case rusia = "RUB"
-    case sweden = "SEK"
-    case singapure = "SGD"
-    case thailand = "THB"
-    case turkey = "TRY"
-    case usa = "USD"
-    case southAfrica = "ZAR"
-}
-
 struct CurrencyRatesTransformType: TransformType {
     typealias Object = [CurrencyRate]
     typealias JSON = [String: Any]

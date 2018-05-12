@@ -10,7 +10,11 @@
 import UIKit
 
 class CurrencyRateTableViewCell: UITableViewCell {
-    @IBOutlet weak var countryImageView: UIImageView!
+    @IBOutlet weak var countryImageView: UIImageView! {
+        didSet {
+            countryImageView.setupRoundedCorners(radius: countryImageView.frame.width / 2)
+        }
+    }
     @IBOutlet weak var currencyExchangeLabel: UILabel!
     @IBOutlet weak var currencyDescriptionLabel: UILabel!
     @IBOutlet weak var currencyRateLabel: UILabel!

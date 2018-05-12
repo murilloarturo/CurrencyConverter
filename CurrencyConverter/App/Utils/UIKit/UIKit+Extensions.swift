@@ -15,6 +15,11 @@ extension UIView {
         layer.shadowOpacity = Float(opacity)
         layer.masksToBounds = false
     }
+    
+    public func setupRoundedCorners(radius: CGFloat) {
+        layer.cornerRadius = radius
+        layer.masksToBounds = true
+    }
 }
 
 public extension UITableView {

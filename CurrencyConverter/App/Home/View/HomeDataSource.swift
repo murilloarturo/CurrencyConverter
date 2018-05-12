@@ -103,6 +103,7 @@ extension HomeDataSource: UITableViewDataSource, UITableViewDelegate {
             cell.currencyExchangeLabel.text = "\(rate) \(item.currency.rawValue)"
             cell.currencyDescriptionLabel.text = item.currency.rawValue
             cell.currencyRateLabel.text = "1 \(currentCurrency.value.rawValue) = \(item.rate) \(item.currency.rawValue)"
+            cell.countryImageView.image = item.currency.image
         }
         return cell
     }
