@@ -12,6 +12,7 @@ import RxSwift
 class HomeDataSource: NSObject {
     private let disposeBag = DisposeBag()
     let currentCurrency = Variable<CurrencyCode>(.usa)
+    private var multiplier: Int = 1
     var data: CurrencyRateData? {
         didSet {
             pickerView?.reloadComponent(0)
@@ -52,6 +53,12 @@ class HomeDataSource: NSObject {
         let index = items.index(of: currentCurrency.value)
         return index ?? 0
     }
+    
+    func updateMultiplier(multiplier: Int) {
+        let newMultiplier = multiplier < 0 ? 1 : multiplier
+        self.multiplier = newMultiplier
+        tableView?.reloadData()
+    }
 }
 
 extension HomeDataSource: UITableViewDataSource, UITableViewDelegate {
@@ -91,7 +98,11 @@ extension HomeDataSource: UITableViewDataSource, UITableViewDelegate {
             default:
                 item = data.otherRates[indexPath.row]
             }
-            cell.update(with: item)
+            
+            let rate = Double(multiplier) * item.rate
+            cell.currencyExchangeLabel.text = "\(rate) \(item.currency.rawValue)"
+            cell.currencyDescriptionLabel.text = item.currency.rawValue
+            cell.currencyRateLabel.text = "1 \(currentCurrency.value.rawValue) = \(item.rate) \(item.currency.rawValue)"
         }
         return cell
     }

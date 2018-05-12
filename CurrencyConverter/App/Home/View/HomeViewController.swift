@@ -120,6 +120,13 @@ extension HomeViewController: UITextFieldDelegate {
             return false
         }
         
+        let text: NSString = (textField.text as? NSString) ?? ""
+        let newString = text.replacingCharacters(in: range, with: string)
+        if let value = Int(newString) {
+            dataSource.updateMultiplier(multiplier: value)
+        } else {
+            dataSource.updateMultiplier(multiplier: 1)
+        }
         return true
     }
 }
