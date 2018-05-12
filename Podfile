@@ -7,5 +7,6 @@ use_frameworks!
 
 target 'CurrencyConverter' do
     pod 'Alamofire', '~> 4.7'
+    pod 'ObjectMapper', '~> 3.1'
 end
 

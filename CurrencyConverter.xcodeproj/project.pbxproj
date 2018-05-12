@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69194F6D20A747370015FE2E /* CurrencyRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69194F6C20A747370015FE2E /* CurrencyRate.swift */; };
+		69194F7020A7506C0015FE2E /* CurrencyExchangeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69194F6F20A7506C0015FE2E /* CurrencyExchangeAPI.swift */; };
 		694AFC1020A73EB40083E6B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */; };
 		694AFC1720A73EB50083E6B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1620A73EB50083E6B6 /* Assets.xcassets */; };
 		694AFC1A20A73EB50083E6B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694AFC1820A73EB50083E6B6 /* LaunchScreen.storyboard */; };
@@ -33,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		4D426660A19DD34ED73AB270 /* Pods-CurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurrencyConverter/Pods-CurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
+		69194F6C20A747370015FE2E /* CurrencyRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRate.swift; sourceTree = "<group>"; };
+		69194F6F20A7506C0015FE2E /* CurrencyExchangeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyExchangeAPI.swift; sourceTree = "<group>"; };
 		694AFC0C20A73EB30083E6B6 /* CurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		694AFC0F20A73EB40083E6B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		694AFC1620A73EB50083E6B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		69194F6E20A750560015FE2E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				69194F6F20A7506C0015FE2E /* CurrencyExchangeAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		694AFC0320A73EB30083E6B6 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +141,7 @@
 		69EB78E620A740A5005207D0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				69194F6E20A750560015FE2E /* API */,
 				69EB78E820A740EA005207D0 /* Home */,
 			);
 			path = App;
@@ -183,6 +196,7 @@
 		69EB78EE20A74138005207D0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				69194F6C20A747370015FE2E /* CurrencyRate.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -321,10 +335,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CurrencyConverter/Pods-CurrencyConverter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,9 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69194F6D20A747370015FE2E /* CurrencyRate.swift in Sources */,
 				69EB78F020A74314005207D0 /* HomeModule.swift in Sources */,
 				694AFC1020A73EB40083E6B6 /* AppDelegate.swift in Sources */,
 				69EB78F320A7433C005207D0 /* HomeViewController.swift in Sources */,
+				69194F7020A7506C0015FE2E /* CurrencyExchangeAPI.swift in Sources */,
 				69EB78FD20A74422005207D0 /* HomeInteractor.swift in Sources */,
 				69EB78F620A74352005207D0 /* HomePresenter.swift in Sources */,
 				69EB78FB20A7440F005207D0 /* HomeRouter.swift in Sources */,
