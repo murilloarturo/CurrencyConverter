@@ -101,7 +101,7 @@ extension HomeDataSource: UITableViewDataSource, UITableViewDelegate {
             
             let rate = Double(multiplier) * item.rate
             cell.currencyExchangeLabel.text = "\(rate) \(item.currency.rawValue)"
-            cell.currencyDescriptionLabel.text = item.currency.rawValue
+            cell.currencyDescriptionLabel.text = "\(item.currency.rawValue) - \(item.currency.description)"
             cell.currencyRateLabel.text = "1 \(currentCurrency.value.rawValue) = \(item.rate) \(item.currency.rawValue)"
             cell.countryImageView.image = item.currency.image
         }
@@ -146,6 +146,7 @@ extension HomeDataSource: UIPickerViewDataSource, UIPickerViewDelegate {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return currencies()[row].rawValue
+        let currency = currencies()[row]
+        return "\(currency.rawValue) - \(currency.description)"
     }
 }

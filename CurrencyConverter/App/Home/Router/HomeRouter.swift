@@ -24,4 +24,10 @@ class HomeRouter {
         window?.rootViewController = navigation
         window?.makeKeyAndVisible()
     }
+    
+    func showAlert(with message: String) {
+        let alert = UIAlertController(title: "", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        navigation.present(alert, animated: true, completion: nil)
+    }
 }

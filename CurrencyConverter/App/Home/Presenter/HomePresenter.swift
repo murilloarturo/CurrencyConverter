@@ -39,7 +39,7 @@ extension HomePresenter: HomeViewControllerPresenter {
             .subscribe(onSuccess: { [weak self] (data) in
                 self?.dataSource?.data = data
             }) { [weak self] (error) in
-                
+                self?.router.showAlert(with: error.localizedDescription)
             }
             .disposed(by: disposeBag)
     }

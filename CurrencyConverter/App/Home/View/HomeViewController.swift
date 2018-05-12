@@ -116,12 +116,12 @@ private extension HomeViewController {
 
 extension HomeViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard string.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil else {
-            return false
-        }
-        
         let text: NSString = (textField.text as? NSString) ?? ""
         let newString = text.replacingCharacters(in: range, with: string)
+        guard string.rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil && newString.count < 20 else {
+            return false
+        }
+                
         if let value = Int(newString) {
             dataSource.updateMultiplier(multiplier: value)
         } else {

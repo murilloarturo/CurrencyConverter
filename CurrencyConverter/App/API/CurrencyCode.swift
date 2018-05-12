@@ -115,4 +115,75 @@ extension CurrencyCode {
             return #imageLiteral(resourceName: "czechRepublic")
         }
     }
+    
+    var description: String {
+        switch self {
+        case .australia:
+            return LocalizedString.australia.localize()
+        case .bulgaria:
+            return LocalizedString.bulgaria.localize()
+        case .brazil:
+            return LocalizedString.brazil.localize()
+        case .canada:
+            return LocalizedString.canada.localize()
+        case .switzerland:
+            return LocalizedString.switzerland.localize()
+        case .denmark:
+            return LocalizedString.denmark.localize()
+        case .europe:
+            return LocalizedString.europe.localize()
+        case .unitedKingdom:
+            return LocalizedString.unitedKingdom.localize()
+        case .hongKong:
+            return LocalizedString.hongKong.localize()
+        case .croatia:
+            return LocalizedString.croatia.localize()
+        case .hungary:
+            return LocalizedString.hungary.localize()
+        case .indonesia:
+            return LocalizedString.indonesia.localize()
+        case .israel:
+            return LocalizedString.israel.localize()
+        case .india:
+            return LocalizedString.india.localize()
+        case .iceland:
+            return LocalizedString.iceland.localize()
+        case .japan:
+            return LocalizedString.japan.localize()
+        case .southKorea:
+            return LocalizedString.southKorea.localize()
+        case .mexico:
+            return LocalizedString.mexico.localize()
+        case .malaysia:
+            return LocalizedString.malaysia.localize()
+        case .norway:
+            return LocalizedString.norway.localize()
+        case .newZealand:
+            return LocalizedString.newZealand.localize()
+        case .philippine:
+            return LocalizedString.philippine.localize()
+        case .poland:
+            return LocalizedString.poland.localize()
+        case .romania:
+            return LocalizedString.romania.localize()
+        case .rusia:
+            return LocalizedString.rusia.localize()
+        case .sweden:
+            return LocalizedString.sweden.localize()
+        case .singapure:
+            return LocalizedString.singapure.localize()
+        case .thailand:
+            return LocalizedString.thailand.localize()
+        case .turkey:
+            return LocalizedString.turkey.localize()
+        case .usa:
+            return LocalizedString.usa.localize()
+        case .southAfrica:
+            return LocalizedString.southAfrica.localize()
+        case .china:
+            return LocalizedString.china.localize()
+        case .czechRepublic:
+            return LocalizedString.czechRepublic.localize()
+        }
+    }
 }
